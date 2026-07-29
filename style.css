@@ -32,7 +32,7 @@
   min-height: 100vh;
   background:
     linear-gradient(rgba(33, 20, 12, 0.78), rgba(33, 20, 12, 0.84)),
-    url("Images/hero-kampung.jpg");
+    url("images/hero-kampung.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -199,6 +199,52 @@
 .profile-video-wrapper {
   display: flex;
   justify-content: center;
+}
+
+/* ================= KONTAK & KREDIT ================= */
+.kontak-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.kontak-block {
+  background: #fff8e8;
+  border: 2px solid #c7a36a;
+  border-top: 8px solid #8b5a2b;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.kontak-block h3 {
+  color: #4a2d1b;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.kontak-block p {
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #3a2313;
+}
+
+.kontak-block p:last-child {
+  margin-bottom: 0;
+}
+
+.kontak-block a {
+  color: #8b5a2b;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px dashed #c7a36a;
+  transition: 0.25s;
+}
+
+.kontak-block a:hover {
+  color: #c89b3c;
+  border-bottom-color: #c89b3c;
 }
 
 .profile-video {
