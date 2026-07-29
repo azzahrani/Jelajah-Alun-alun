@@ -539,8 +539,10 @@ function isiDaftarLokasi(data) {
 
         markers.forEach(function (m) {
 
-          if (m.data.nama === lokasi.nama) {
+          if (m.index === indexAsli) {
             m.marker.openPopup();
+          } else {
+            m.marker.closePopup();
           }
 
         });
