@@ -134,7 +134,19 @@ function isiLokasiSejarahLanding(data) {
     return;
   }
 
-  wrapper.innerHTML = data
+  // Nama lokasi bisa muncul lebih dari 1 baris di CSV (mis. beberapa titik
+  // marker untuk lokasi yang sama, seperti "Benteng Cepuri" x3). Di peta itu
+  // memang disengaja jadi beberapa marker, tapi di kartu halaman depan ini
+  // cukup ditampilkan 1 kali saja per nama lokasi.
+  var sudahDitampilkan = new Set();
+  var dataUnik = data.filter(function (lokasi) {
+    var nama = (lokasi.nama || "").trim();
+    if (sudahDitampilkan.has(nama)) return false;
+    sudahDitampilkan.add(nama);
+    return true;
+  });
+
+  wrapper.innerHTML = dataUnik
     .map(function (lokasi) {
       var ringkasan = lokasi.cerita || "";
 
