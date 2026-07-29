@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Jelajah Rukun Kampung Alun-Alun, Kotagede</title>
+  <title>Jelajah Kampung Alun-Alun, Kotagede</title>
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -29,6 +29,7 @@
         <a href="#lokasi">Lokasi Sejarah</a>
         <a href="#profil">Video Profil</a>
         <a href="#webgis">Tentang WebGIS</a>
+        <a href="#kontak">Informasi</a>
         <a href="#" onclick="openMap(); return false;">Peta</a>
       </div>
     </nav>
@@ -60,14 +61,15 @@
         <h2>Sejarah Rukun Kampung Alun-Alun</h2>
 
         <p>
-          Kotagede adalah ibu kota pertama Kerajaan Mataram Islam, berawal dari tanah hutan Alas Mentaok yang diberikan Sultan Hadiwijaya dari Pajang kepada Ki Ageng Pemanahan. Putranya, Sutawijaya, kemudian mendirikan kerajaan sendiri dengan gelar Panembahan Senopati dan membangun keraton di kawasan ini pada akhir abad ke-16 (Gramedia Literasi & Sindonews, 2023). Kampung Alun-Alun, yang terletak di selatan Pasar Kotagede, dinamai demikian karena dahulu berfungsi sebagai alun-alun atau lapangan utama keraton Mataram Islam pada masa Panembahan Senopati. Barulah sekitar abad ke-18, setelah pusat pemerintahan berpindah, area ini beralih fungsi menjadi permukiman, dengan kerukunan antarwarga yang terjalin sejak tahun 1830-an pasca Perang Diponegoro (Kemantren Kotagede & Harian Jogja, 2023). 
+          Kotagede adalah ibu kota pertama Kerajaan Mataram Islam, berawal dari tanah hutan Alas Mentaok yang diberikan Sultan Hadiwijaya dari Pajang kepada Ki Ageng Pemanahan. Putranya, Sutawijaya, kemudian mendirikan kerajaan sendiri dengan gelar Panembahan Senopati dan membangun keraton di kawasan ini pada akhir abad ke-16 (Gramedia Literasi & Sindonews, 2023). Kampung Alun-Alun, yang terletak di selatan Pasar Kotagede, dinamai demikian karena dahulu berfungsi sebagai alun-alun atau lapangan utama keraton Mataram Islam pada masa Panembahan Senopati. Barulah sekitar abad ke-18, setelah pusat pemerintahan berpindah, area ini beralih fungsi menjadi permukiman, dengan kerukunan antarwarga yang terjalin sejak tahun 1830-an pasca Perang Diponegoro (Kemantren Kotagede & Harian Jogja, 2023). Kawasan ini kini lebih dikenal dengan julukan "Between Two Gates" (Lawang Pethuk), nama yang diberikan Tim Peneliti Arsitektur UGM pada 1986 karena sembilan rumah joglo di dalamnya diapit dua gerbang di ujung timur dan barat, terhubung oleh Jalan Rukunan (detikJogja, 2023).
+        </p>
       </div>
     </section>
 
     <!-- DAFTAR LOKASI SEJARAH -->
     <section id="lokasi" class="home-section lokasi-section">
       <div class="section-container">
-        <h2>Daftar Lokasi</h2>
+        <h2>Daftar Lokasi Sejarah</h2>
 
         <p class="section-desc">
           Berikut merupakan beberapa lokasi sejarah yang dapat ditampilkan dalam
@@ -126,6 +128,41 @@
         </p>
 
         <button class="btn-main" onclick="openMap()">Buka WebGIS</button>
+      </div>
+    </section>
+
+    <!-- KONTAK & KREDIT -->
+    <section id="kontak" class="home-section kontak-section">
+      <div class="section-container">
+        <h2>Kontak &amp; Kredit</h2>
+
+        <div class="kontak-grid">
+
+          <div class="kontak-block">
+            <h3>Contact Person</h3>
+            <p><b>Nama:</b> Bapak Rukun Kampung Alun-Alun</p>
+            <p><b>WhatsApp:</b>
+              <a href="https://wa.me/62GANTINOMORWA" target="_blank" rel="noopener">
+                +62 GANTI-NOMOR-WA
+              </a>
+            </p>
+            <p><b>Instagram:</b>
+              <a href="https://instagram.com/GANTIUSERNAME" target="_blank" rel="noopener">
+                @GANTIUSERNAME
+              </a>
+            </p>
+          </div>
+
+          <div class="kontak-block">
+            <h3>Credit</h3>
+            <p><b>Dikembangkan oleh:</b> Azzahra Nisrina Iskandariah</p>
+            <p><b>Program:</b> KKN BN.84.020, UPN "Veteran" Yogyakarta</p>
+            <p><b>Data peta:</b> OpenStreetMap Contributors</p>
+            <p><b>Teknologi:</b> Leaflet.js &amp; PapaParse</p>
+            <p><b>Sumber sejarah:</b> tercantum di tiap cerita lokasi masing-masing</p>
+          </div>
+
+        </div>
       </div>
     </section>
 
