@@ -173,8 +173,11 @@ function loadCSV() {
     download: true,
     header: true,
     skipEmptyLines: true,
+    delimiter: ";", // dipastikan manual, jangan ditebak otomatis — banyak koma di teks cerita bisa bikin salah tebak
 
     complete: function (results) {
+      console.log("Kolom CSV yang terdeteksi:", results.meta.fields);
+
       lokasiData = (results.data || []).map(normalisasiLokasi);
 
       if (!lokasiData.length) {
